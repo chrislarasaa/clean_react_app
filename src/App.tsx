@@ -1,12 +1,11 @@
-import { Typography } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Typography variant="h2" component="h1">
-        Hola Mundo
-      </Typography>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
